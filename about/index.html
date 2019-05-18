@@ -207,7 +207,7 @@
         <div class="brand">
             <div class="title center-align">
                 
-                    告别的博客
+                    青山如故,只是人心变了。
                 
             </div>
 
@@ -221,7 +221,8 @@
 </div>
 <script>
 // 每天切换 banner 图.  Switch banner image every day.
-$('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
+$('.bg-cover').css('background-image', 'url(/medias/banner/' + '6.jpg)');
+//源代码 $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
 </script>
     </div>
 </div>
@@ -386,7 +387,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,0,0,0,0,3],
+                data: [0,0,0,0,0,0,0,0,0,0,1,0,4],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -428,7 +429,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"Python","value":1},{"name":"毕业设计","value":1},{"name":"Typora","value":1},{"name":"电脑","value":1},{"name":"打印机共享","value":1},{"name":"Typora","value":1}],
+                data: [{"name":"Python","value":1},{"name":"电脑","value":1},{"name":"毕业设计","value":1},{"name":"打印机共享","value":1},{"name":"Typora","value":1},{"name":"Typora","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -452,7 +453,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
         xAxis: [
             {
                 type: 'category',
-                data: ["毕业设计","Typora","Python","电脑","打印机共享"]
+                data: ["Typora","Python","毕业设计","电脑","打印机共享"]
             }
         ],
         yAxis: [
@@ -465,7 +466,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                 type: 'bar',
                 color: ['#82d3f4'],
                 barWidth : 18,
-                data: [2,1,1,1,1],
+                data: [1,1,1,1,1],
                 markPoint: {
                     symbolSize: 45,
                     data: [{
