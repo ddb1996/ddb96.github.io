@@ -5,12 +5,7 @@
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
     <meta name="keywords" content="python2.7实现ATM存取款机, 告别">
-    <meta name="description" content="毕业设计：用python2.7写atm存款机源代码如下：# -*- coding: cp936 -*-
-zidian={}
-zidian2={}
-import string
-import random
-import cPickle as p">
+    <meta name="description" content="毕业设计：用python2.7写atm存款机摘 要通过Python编程完成一个银行ATM机模拟系统，具备如下功能:(1)登陆验证：用户输入用户名密码登陆，检测用户名是否存在以及用户名密码是否匹配；用户名密码各有三次输入机会，超过三次系统退出">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -285,14 +280,14 @@ import cPickle as p">
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        933
+                        1.8k
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        4 分
+                        7 分
                     </div>
                     
                 
@@ -308,7 +303,12 @@ import cPickle as p">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="毕业设计：用python2-7写atm存款机"><a href="#毕业设计：用python2-7写atm存款机" class="headerlink" title="毕业设计：用python2.7写atm存款机"></a>毕业设计：用python2.7写atm存款机</h1><h2 id="源代码如下："><a href="#源代码如下：" class="headerlink" title="源代码如下："></a>源代码如下：</h2><pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># -*- coding: cp936 -*-</span>
+                <h1 id="毕业设计：用python2-7写atm存款机"><a href="#毕业设计：用python2-7写atm存款机" class="headerlink" title="毕业设计：用python2.7写atm存款机"></a>毕业设计：用python2.7写atm存款机</h1><h2 id="摘-要"><a href="#摘-要" class="headerlink" title="摘 要"></a>摘 要</h2><p>通过Python编程完成一个银行ATM机模拟系统，具备如下功能:<br>(1)登陆验证：用户输入用户名密码登陆，检测用户名是否存在以及用户名密码是否匹配；用户名密码各有三次输入机会，超过三次系统退出。<br>(2)菜单界面：登陆成功后显示功能操作界面，输入序号选择对应功能。<br>(3)用户注册：用户可以输入密码会随机发放银行卡账号，如果账号已经被申请则让用户重新输入密码获取新账号，申请完成后输入金额对银行卡进行充值。<br>(4)账户管理：用户可以随时查看自己的账户余额。用户可以输入其他账户用户名，实现转账功能；用户名必须存在。用户也可以模拟实现存取款功能。<br>关 键 字：登陆验证 菜单界面  用户注册  账户管理</p>
+<h2 id="一．研究（设计）内容"><a href="#一．研究（设计）内容" class="headerlink" title="一．研究（设计）内容"></a>一．研究（设计）内容</h2><p>主要研究内容：基于python平台的人工智能系统主要研究内容是系统怎么样对用户的需求进行操作，执行，怎么判断用户存在及密码是否正确，获取随机账号，怎么样实现登陆以及存钱，取钱，转账，查看账单的设计，以下是相关技术：<br>1.判断账户存在及密码是否正确的实现：通过python 写入字典的键值进对用户提交的数据进行判断该键以及对应的值是否存在。<br>2.获取随机账号的实现：通过python的random，string模块。对用户提交的操作进行数据处理然后发给用户进行显示。<br>3.登陆的实现：通过python 写入字典的键值进对用户提交的数据进行判断该键以及对应的值是否存在。<br>4.存钱：通过python的os，cPickle 模块对文本进行读取，写入。<br>5.取钱：通过python的os，cPickle 模块对文本进行读取，写入。<br>6.转账：通过python的os，cPickle 模块对文本进行读取，写入。<br>7.查看账单：通过python的os，cPickle 模块对文本进行读取，写入。</p>
+<h2 id="二．研究（设计）思想"><a href="#二．研究（设计）思想" class="headerlink" title="二．研究（设计）思想"></a>二．研究（设计）思想</h2><p>1.首先定义多个功能函数，并赋予每个函数相应的形式参数。<br>2.用户和程序交互的时候，将用户发送的信息进行传递。<br>3.将用户的信息经过功能函数处理返回给程序处理后的值。<br>4.程序收到功能函数处理后的值调用后显示相应的界面<br>5.用户在对程序返回的界面进行相应操作后，提取信息反馈到程序中。</p>
+<h2 id="三．工作方法（流程）"><a href="#三．工作方法（流程）" class="headerlink" title="三．工作方法（流程）"></a>三．工作方法（流程）</h2><p>1.程序启动，等待主界面的显示。<br>2.按提示输入相关信息，并将信息保存。<br>3.程序接收用户传输的信息后，提取其中的信息类型判断执行什么功能，执行完毕后，返回相应信息给用户。<br>4.用户根据程序返回的信息进行进一步的信息交互，程序根据用户提交的内容显示信息/跳转相应的界面。</p>
+<h2 id="四-程序测试界面结果"><a href="#四-程序测试界面结果" class="headerlink" title="四.程序测试界面结果"></a>四.程序测试界面结果</h2><p><img src="/images/biyesheji/图片1.png" alt="主界面"><br><img src="/images/biyesheji/图片2.png" alt="登陆"><br><img src="/images/biyesheji/图片3.png" alt="登陆"><br><img src="/images/biyesheji/图片4.png" alt="申请账号"><br><img src="/images/biyesheji/图片5.png" alt="次级菜单"><br><img src="/images/biyesheji/图片6.png" alt="存钱"><br><img src="/images/biyesheji/图片7.png" alt="取钱"><br><img src="/images/biyesheji/图片8.png" alt="转账"><br><img src="/images/biyesheji/图片9.png" alt="查看账单"></p>
+<h2 id="源代码如下："><a href="#源代码如下：" class="headerlink" title="源代码如下："></a>源代码如下：</h2><pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># -*- coding: cp936 -*-</span>
 zidian<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
 zidian2<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
 <span class="token keyword">import</span> string
@@ -865,7 +865,7 @@ CMD <span class="token operator">=</span> <span class="token punctuation">{</spa
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">2.5k</span>
+                <span class="white-color">3.4k</span>
             
 
             
