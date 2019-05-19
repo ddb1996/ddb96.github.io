@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>VPN连接</title>
+      <link href="/2019/05/19/vpn-lian-jie/"/>
+      <url>/2019/05/19/vpn-lian-jie/</url>
+      
+        <content type="html"><![CDATA[<p>右键网络-网络和网络共享中心</p><p>设置新的连接或网络</p><p>连接到工作区</p><p>否，创建新连接</p><p>使用我的Internet连接（VPN）</p><p>输入目标区域外网IP地址 </p><p>创建</p><p>输入VPN 账号和密码</p><p>完成</p><p>回到网络和共享中心 -点击更改适配器设置。</p><p>找到刚刚创建的VPN连接</p><p>右键点击属性-安全-点对点隧道协议（pptp）</p><p>选择不允许加密</p><p>点击确定。</p><p>右键VPN连接-断开-连接</p><p>即可完成VPN访问</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> VPN </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> VPN </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>服务器搭建</title>
+      <link href="/2019/05/19/fu-wu-qi-da-jian/"/>
+      <url>/2019/05/19/fu-wu-qi-da-jian/</url>
+      
+        <content type="html"><![CDATA[<p>先用IP-config 查询本地IP地址是否是为公网地址？</p><p>1.若为公网地址，则可直接进路由器开启DDNS服务及虚拟服务器或者DMZ主机功能配置端口转发即可，外网访问只需域名（或者IP地址）加上端口即可完成访问呢。</p><p>2.若为私网地址则可通过花生壳内网穿透（支持私网IP、本地计算机名称）服务做好相应功能即可通过域名访问。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 服务器搭建 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 服务器搭建 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>python2.7实现ATM存取款机</title>
       <link href="/2019/05/17/python2.7-atm/"/>
       <url>/2019/05/17/python2.7-atm/</url>
