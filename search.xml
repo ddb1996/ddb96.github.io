@@ -19,16 +19,20 @@
           
           <category> Typora </category>
           
+          <category> 电脑使用 </category>
+          
+          <category> 打印机共享 </category>
+          
       </categories>
       
       
         <tags>
             
-            <tag> Typora </tag>
-            
             <tag> Python </tag>
             
             <tag> 毕业设计 </tag>
+            
+            <tag> Typora </tag>
             
         </tags>
       
@@ -46,20 +50,26 @@
       
       <categories>
           
-          <category> 电脑 </category>
+          <category> Python </category>
           
-          <category> 打印机共享 </category>
+          <category> 毕业设计 </category>
           
           <category> Typora </category>
+          
+          <category> 电脑使用 </category>
+          
+          <category> 打印机共享 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 电脑 </tag>
+            <tag> Typora </tag>
             
-            <tag> 打印机共享 </tag>
+            <tag> 打印机 </tag>
+            
+            <tag> 电脑使用 </tag>
             
         </tags>
       
